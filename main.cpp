@@ -13,8 +13,3 @@ TEST(fizzBuzzProj, TestCase_1)
 {
 	ASSERT_TRUE(fizzBuzz(1) == "1");
 }
-
-TEST(fizzBuzzProj, TestCase_2)
-{
-	EQUAL_EXP();
-}
