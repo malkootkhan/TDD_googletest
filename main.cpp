@@ -20,3 +20,9 @@ TEST(fizzBuzzProj, TestCase_2)
 	ASSERT_STREQ(result.c_str(), "2");
 
 }
+
+TEST(fizzBuzzProj, TestCase_3)
+{
+	string result = fizzBuzz(3);
+	ASSERT_STREQ(result.c_str(), "Fizz");
+}
