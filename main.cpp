@@ -5,14 +5,15 @@ using namespace std;
 
 string fizzBuzz(int n)
 {
-	if(n % 3 == 0 && n % 5 == 0)
-		return "FizzBuzz";
+	string str = "";
 	if(n % 3 == 0)
-		return "Fizz";
+		 str += "Fizz";
 	if(n % 5 == 0)
-		return "Buzz";
+		str += "Buzz";
+	if(n % 3 != 0 && n % 5 != 0)
+		str += to_string(n);
 
-	return to_string(n);
+	return str.c_str();
 }
 
 
@@ -26,7 +27,8 @@ TEST(fizzBuzzProj, TestCase_2)
 
 TEST(fizzBuzzProj, TestCase_3)
 {
-	string result = fizzBuzz(3);
+	int n = 3;
+	string result = fizzBuzz(n);
 	ASSERT_STREQ(result.c_str(), "Fizz");
 }
 TEST(fizzBuzzProj, TestCase_5)
