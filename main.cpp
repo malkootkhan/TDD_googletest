@@ -7,9 +7,10 @@ string fizzBuzz(int n)
 {
 	if(n % 3 == 0)
 		return "Fizz";
-	else 
-		return to_string(n);
+	if(n % 5 == 0)
+		return "Buzz";
 
+	return to_string(n);
 }
 
 
