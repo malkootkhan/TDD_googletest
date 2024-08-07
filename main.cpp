@@ -13,3 +13,10 @@ TEST(fizzBuzzProj, TestCase_1)
 {
 	ASSERT_TRUE(fizzBuzz(1) == "1");
 }
+
+TEST(fizzBuzzProj, TestCase_2)
+{
+	string result = fizzBuzz(2);
+	ASSERT_STREQ(result.c_str(), "2");
+
+}
