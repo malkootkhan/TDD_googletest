@@ -5,7 +5,7 @@ using namespace std;
 
 string fizzBuzz(int n)
 {
-	if(n == 3)
+	if(n % 3 == 0)
 		return "Fizz";
 	else 
 		return to_string(n);
