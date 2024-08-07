@@ -16,8 +16,9 @@ string fizzBuzz(int n)
 
 TEST(fizzBuzzProj, TestCase_2)
 {
-	string result = fizzBuzz(2);
-	ASSERT_STREQ(result.c_str(), to_string(2).c_str());
+	int n = 2;
+	string result = fizzBuzz(n);
+	ASSERT_STREQ(result.c_str(), to_string(n).c_str());
 
 }
 
@@ -28,11 +29,13 @@ TEST(fizzBuzzProj, TestCase_3)
 }
 TEST(fizzBuzzProj, TestCase_5)
 {
-	string result = fizzBuzz(5);
+	int n = 5;
+	string result = fizzBuzz(n);
 	ASSERT_STREQ(result.c_str(), "Buzz");
 }
 TEST(fizzBuzzProj, TestCase_15)
 {
-	string result = fizzBuzz(15);
-	ASSERT_STREQ(result.c_str(), to_string(15).c_str());
+	int n = 15;
+	string result = fizzBuzz(n);
+	ASSERT_STREQ(result.c_str(), "FizzBuzz");
 }
